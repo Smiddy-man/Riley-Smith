@@ -1,8 +1,8 @@
 :root {
   --Impact: #c9240e;
   --Main: #f7f7f7;
-  --Accent: #cfcfcf;
-  --Background: #24292e;
+  --Accent: #b5b5b5;
+  --Background: #0e0e0e;
 }
 
 * {
@@ -11,6 +11,18 @@
   box-sizing: border-box;
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 1vw;
+  color: var(--Accent);
+  background-color: var(--Background);
+}
+
+h1 {
+  color: var(--Main)
+}
+
+nav a {
+  text-decoration: none;
+  padding: 0.5vh 0.75vw;
+  color: var(--Main)
 }
 
 header {
@@ -21,10 +33,15 @@ header {
   background-color: var(--Impact);
 }
 
+header, header h1, header li, header a, header ul {
+  background-color: var(--Impact);
+  color: var(--Main)
+}
+
 header h1 {
-  font-size: 200%;
+  font-size: 300%;
   float: left;
-  padding: 1.5vw 1vw;
+  padding: 2vh 1vw;
 }
 
 nav li, nav a {
@@ -34,13 +51,6 @@ nav li, nav a {
 nav ul {
   float: right;
 }
-
-nav a {
-  text-decoration: none;
-  padding: 0.5vh 0.75vw;
-  color: var(--Main)
-}
-
 nav li {
   padding: 5% 3vw;
 }
@@ -52,6 +62,16 @@ nav li {
   background-size: cover;
 }
 
+.txt-block {
+  padding: 5vw 25vw;
+}
+
+.txt-block h1 {
+  text-align: center;
+  font-size: 200%;
+  padding-bottom: 3vh;
+}
+
 li a {
   display: block;
   text-align: center;
@@ -60,15 +80,6 @@ li a {
 
 nav a:hover {
   color: var(--Accent)
-}
-@media only screen and (max-width: 960px) {
-    .hero-img {
-  background-image: url("Images/GeoCoverLo.png");
-  }
-}
-@media only screen and (min-width: 1920px) {
-  .hero-img {
-  background-image: url("Images/GeoCoverHi.png");
 }
 @media only screen and (max-width: 600px) {
   * {
