@@ -1,0 +1,90 @@
+:root {
+  --Impact: #c9240e;
+  --Main: #f7f7f7;
+  --Accent: #cfcfcf;
+  --Background: #24292e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1vw;
+}
+
+header {
+  position: fixed;
+  top 0;
+  width: 100%;
+  color: var(--Main);
+  background-color: var(--Impact);
+}
+
+header h1 {
+  font-size: 200%;
+  float: left;
+  padding: 1.5vw 1vw;
+}
+
+nav li, nav a {
+  display: inline-block;
+}
+
+nav ul {
+  float: right;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 0.5vh 0.75vw;
+  color: var(--Main)
+}
+
+nav li {
+  padding: 5% 3vw;
+}
+
+.hero-img {
+  background-image: url("Images/GeoCover.png");
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+li a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--Accent)
+}
+@media only screen and (max-width: 960px) {
+    .hero-img {
+  background-image: url("Images/GeoCoverLo.png");
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .hero-img {
+  background-image: url("Images/GeoCoverHi.png");
+}
+@media only screen and (max-width: 600px) {
+  * {
+    font-size: 2vw;
+  }
+
+  header h1 {
+    display: none;
+  }
+
+  nav a {
+    font-size: 5vw;
+  }
+
+  nav ul {
+    font-size: 6vw;
+    transform: translate(-6.5vw);
+  }
+}
